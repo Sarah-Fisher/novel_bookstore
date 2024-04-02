@@ -1,0 +1,268 @@
+/* GENERAL STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(69,104,220);
+    background: linear-gradient(0deg, rgba(69,104,220,1) 0%, rgba(176,106,179,1) 100%);
+}
+
+h2, h3, a, li {
+    font-family: 'Mulish', sans-serif;
+}
+
+h1, p {
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.row {
+    margin: 0;
+    padding: 10px;
+}
+
+.row a {
+    text-decoration: none;
+    color: rgba(69,104,220,1);
+}
+
+.row a:hover {
+    text-shadow: rgb(128, 117, 231) 1px 0 15px;
+}
+
+/* HEADER AND NAVIGATION STYLES */
+
+.main-header,
+.woocommerce-shop header,
+.single-product header,
+.woocommerce-cart header,
+.woocommerce-checkout header {
+    width: 100%;
+    height: 175px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+header div,
+.woocommerce-shop header div,
+.single-product header div,
+.woocommerce-cart header div,
+.woocommerce-checkout header div {
+    height: 95%;
+    width: 100%;
+    flex-grow: 1;
+}
+
+header div img,
+.woocommerce-shop header div img,
+.single-product header div img,
+.woocommerce-cart header div img,
+.woocommerce-checkout header div img {
+    width: auto;
+    height: 100%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    color: #0e0e0e;
+    text-shadow: rgb(245, 242, 233) 1px 0 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.menu li a:hover {
+    text-shadow: rgb(243, 217, 122) 1px 0 15px;
+}
+
+.menu li a:visited {
+    color: #0e0e0e;
+}
+
+/* HOME PAGE MASTHEAD */
+
+.masthead{
+    padding-top: 200px;
+}
+
+.masthead div{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.masthead h1 {
+    font-size: 9em;
+    text-shadow: rgb(233, 229, 215) 1px 0 10px;
+}
+
+.masthead h2 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: rgb(243, 217, 122) 1px 0 15px;
+}
+
+/* Wave Code provided by https://wavier.art/*/
+.wave-container {  
+    height: 80vh;
+    background-color: rgba(29, 198, 189, 0);
+    position: relative;
+  }
+  
+  .wave-container::before {   
+    content: "";
+    width: 100%;
+    height: 51px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 19vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  92' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 67L50 63C100 59 200 51 300 34C400 18 500 -7 600 1C700 9 800 51 900 67C1000 84 1100 76 1150 72L1200 67V92H1150C1100 92 1000 92 900 92C800 92 700 92 600 92C500 92 400 92 300 92C200 92 100 92 50 92H0V67Z' fill='%23eeeeff'/></svg>");
+  }
+  
+  @media(max-width:850px) {
+    .wave-container::before {    
+      height: 25.5px
+    }  
+  }
+
+/* HOME PAGE FEATURED BOOKS ROW */
+
+.featured-row {
+    background-color: #eeeeff;
+    padding: 20px;
+    display: flex;
+}
+
+
+/* HOME PAGE STORE INFO ROW */
+
+.store-row-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+.store-row div{
+    padding: 20px;
+}
+
+
+/* Wave Code provided by https://wavier.art/ */
+
+.wave-container2 {  
+    height: 50vh;
+    background-color: rgba(29, 198, 189, 0);
+    position: relative;
+  }
+  
+  .wave-container2::before {   
+    content: "";
+    width: 100%;
+    height: 51px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 19vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  92' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 67L50 63C100 59 200 51 300 34C400 18 500 -7 600 1C700 9 800 51 900 67C1000 84 1100 76 1150 72L1200 67V92H1150C1100 92 1000 92 900 92C800 92 700 92 600 92C500 92 400 92 300 92C200 92 100 92 50 92H0V67Z' fill='%23eeeeff'/></svg>");
+  }
+  
+  @media(max-width:850px) {
+    .wave-container2::before {    
+      height: 25.5px
+    }  
+  }
+
+/* HOME PAGE EVENTS ROW */
+
+.events-row {
+    background-color: #eeeeff;
+}
+
+.events-row-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+/* SHOP PAGE */
+
+
+.shop-masthead{
+    width: 100%;
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .shop-masthead div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .shop-masthead h1 {
+    font-size: 9em;
+    color:#eeeeff;
+    text-shadow: rgb(31, 30, 28) 1px 0 10px;
+  }
+
+/* ACCOUNT PAGE */
+
+.my-account main {
+    padding-top: 200px;
+}
+
+/* CART PAGE */
+
+.cart main {
+    padding-top: 200px;
+}
+
+/* CHECK OUT PAGE */
+
+.checkout main {
+    padding-top: 200px;
+}
+
+/* PRODUCT PAGE */
+
+.single-product main {
+    padding-top: 200px;
+}
+
+/* FOOTER */
+
